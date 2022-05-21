@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+        <title>CSS Selectors</title>
+    </head>
+    <body>
+        <h1>CSS Selectors</h1>
+        <h2>selectAllElementsWithClass()</h2>
+        <div>
+            <button class="control-button">Play</button>
+        </div>
+        <h2>selectAllElementsWithId()</h2>
+        <div>
+            <button id="pause">Pause</button>
+        </div>
+        <h2>selectAllElementsWithClassAndId()</h2>
+        <div>
+            <button class="player-button">Play</button>
+            <button id="resume">Resume</button>
+            <button class="player-button">Stop</button>
+        </div>
+        <h2>selectAllElementsWithTag()</h2>
+        <div>
+            <iframe id="first-iframe" name="green" src="/pages/first-iframe.html" style="border-color: lightgreen;"></iframe>
+        </div>
+        <h2>selectAllElementsWithTagAndAnotherTag()</h2>
+        <div>
+            <label for="you">A few words about you:</label><br>
+            <textarea id="you"></textarea><br><br>
+            <label for="me">A few words about me:</label><br>
+            <textarea id="me"></textarea>
+        </div>
+        <h2>selectAllElementsWithTagThatAreInsideAnotherTag()</h2>
+        <article>This article intent to demonstrate that if you don't specify a parent element, you will find another element.</article>
+        <div>
+            <article>Child</article>
+        </div>
+        <h2>selectAllElementsWithTagWithParentTag()</h2>
+        <div>
+            <p>Paragraph</p>
+        </div>
+        <h2>selectAllElementsWithTagThatAreNextToAnotherTag()</h2>
+        <div>
+            <label for="texta"></label>
+        </div>
+        <textarea>Text</textarea>
+        <h2>selectAllElementsThatAreSiblingsOfAnotherElement()</h2>
+        <div>
+            <span>The next ul element will NOT be selected</span>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <p>The next ul elements will be selected</p>
+            <ul>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+            <ul>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+        <h2>selectAllElementsWithTagAndClass()</h2>
+        <div>
+            <button>Hey</button>
+            <a class="mood-button">Yay</a>
+            <button class="mood-button">Bye</button>
+        </div>
+        <h2>selectAllElementsWithSpecificIdAttribute()</h2>
+        <div>
+            <button id="selenium">Selenium</button>
+        </div>
+        <h2>selectAllElementsWithIdSpecificEnding()</h2>
+        <div>
+            <button id="navigation-up">Up</button>
+            <button id="navigation-down">Down</button>
+        </div>
+        <h2>selectAllElementsWithIdSpecificStarting()</h2>
+        <div>
+            <button id="x-button">Xbutton</button>
+        </div>
+        <h2>selectAllElementsElementsWithAttributeContaining()</h2>
+        <div>
+            <p title="Easy text">Easy text</p>
+        </div>
+        <h2>selectAllElementsElementsWithIDContainingString()</h2>
+        <div>
+            <button id="trigger">Trigger</button>
+        </div>
+        <h2>selectAllCheckedFormElements()</h2>
+        <div>
+            <input type="checkbox" id="yes-checkbox" name="yes" checked>
+            <label for="yes-checkbox">Yes</label>
+            <input type="checkbox" id="no-checkbox" name="no">
+            <label for="no-checkbox">No</label>
+        </div>
+        <h2>selectAllDisabledFormElements()</h2>
+        <div>
+            <input type="text" id="first-name-input" name="first-name">
+            <label for="first-name-input">First name</label>
+            <input type="text" id="surname-input" name="surname" disabled>
+            <label for="surname-input">Surname</label>
+        </div>
+        <h2>selectAllEnabledFormElements()</h2>
+        <div>
+            <input type="number" id="width-input" name="width" class="user-data">
+            <label for="width-input">Width</label>
+            <input type="height" id="height-input" name="height" class="user-data" disabled>
+            <label for="height-input">Height</label>
+        </div>
+        <h2>selectAllElementsThatAreTheFirstChildOfTheirParent()</h2>
+        <div>
+            <b>Valueable</b>
+            <b>Z</b>
+            <b>N</b>
+            <b>D</b>
+            <b></b>
+        </div>
+        <h2>selectAllElementsThatAreTheFirstElementOfTheirParent</h2>
+        <div>
+            <i>Italic text</i>
+            <i>One more italic text</i>
+        </div>
+        <h2>selectAllElementsWhenTheyAreHovered()</h2>
+        <div>
+            <button id="boom">Boom</button>
+        </div>
+        <h2>selectAllInputElementsWithMaxOrMinValueWhenValueIsInRange()</h2>
+        <div>
+            <input type="number" class="age" min="18" max="30" value="20" id="age-in-range">
+            <label for="age-in-range">Age in range</label>
+            <input type="number" class="age" min="18" max="30" value="35" id="age-out-of-range">
+            <label for="age-out-of-range">Age out of range</label>
+        </div>
+        <h2>selectAllElementsWithAttributeValueEqualTo()</h2>
+        <div>
+            <p lang="it">Italian</p>
+        </div>
+        <h2>selectAllElementsThatAreTheLastChildOfTheirParent()</h2>
+        <div>
+            <strong>Strong</strong>
+            <strong>Stronger</strong>
+            <strong>Strongest</strong>
+        </div>
+        <h2>selectAllElementsThatAreTheLastChildWithThisTypeOfTheirParent()</h2>
+        <div>
+            <strong>Strong</strong>
+            <strong>Stronger</strong>
+            <strong>Strongest</strong>
+            <p>Super strong</p>
+        </div>
+        <h2>selectAllElementsThatAreTheFirstChildOfTheirElement()</h2>
+        <div class="paragraphs">
+            <p>The first paragraph</p>
+            <p>The second paragraph</p>
+            <p>The third paragraph</p>
+        </div>
+    </body>
+</html>
