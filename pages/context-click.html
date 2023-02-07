@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+        <script src="/scripts/click-scripts.js">
+            window.addEventListener("contextmenu", e => e.preventDefault());
+        </script>
+        <title>Context click</title>
+    </head>
+    <body>
+        <h1>Context click</h1>
+        <button id="green-button" oncontextmenu="contextClicked()">click me to see context menu</button>
+        <div id="context-menu" style="display: none"> 
+            <ul class="menu"> 
+                <li id="navigation-link"><a href="/pages/navigation.html">Navigation</a></li>
+                <li id="keyboard-link"><a href="/pages/keyboard.html">Keyboard</a></li>
+                <li id="iframes-link"><a href="/pages/iframes.html">iFrames</a></li>
+            </ul> 
+        </div>
+    </body>
+</html>
